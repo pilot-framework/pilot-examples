@@ -10,7 +10,7 @@ app "react-example" {
     deploy {
         use "pilot-cloudfront" {
             region = "us-east-1"
-            bucket = "react-example"
+            bucket = "pilot-react-example"
         }
     }
 }
