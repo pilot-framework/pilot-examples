@@ -13,4 +13,8 @@ app "react-example" {
             bucket = "pilot-react-example" # this should be a unique bucket name
         }
     }
+
+    release {
+        use "pilot-cloudfront" {}
+    }
 }
