@@ -8,7 +8,7 @@ app "gcp-react-example" {
     }
 
     deploy {
-        use "pilot-gcp-cdn" {
+        use "pilot-cloud-cdn" {
             project = "gcp-react-example" # make sure this is project ID, not name
             bucket = "pilot-gcp-react-example" # this should be a unique bucket name
             region = "us-east1"
@@ -16,6 +16,6 @@ app "gcp-react-example" {
     }
 
     release {
-        use "pilot-gcp-cdn" {}
+        use "pilot-cloud-cdn" {}
     }
 }
