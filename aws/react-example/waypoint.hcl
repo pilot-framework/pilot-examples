@@ -1,9 +1,5 @@
 project = "react-example"
 
-runner {
-    enabled = true
-}
-
 app "react-example" {
     build {
         use "yarn" {
