@@ -3,7 +3,8 @@ project = "react-example"
 app "react-example" {
     build {
         use "yarn" {
-            directory = "./"
+            # need to specify with the way waypoint handles remote repo cloning
+            directory = "./aws/react-example"
         }
     }
 
