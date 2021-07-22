@@ -3,7 +3,7 @@ project = "gcp-react-example"
 app "gcp-react-example" {
     build {
         use "yarn" {
-            directory = "./"
+            directory = "./gcp/react-example"
         }
     }
 
@@ -12,6 +12,7 @@ app "gcp-react-example" {
             project = "gcp-react-example" # make sure this is project ID, not name
             bucket = "pilot-gcp-react-example" # this should be a unique bucket name
             region = "us-east1"
+            directory = "./gcp/react-example/build"
         }
     }
 
