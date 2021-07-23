@@ -17,6 +17,8 @@ app "gcp-react-example" {
     }
 
     release {
-        use "pilot-cloud-cdn" {}
+        use "pilot-cloud-cdn" {
+            domain = "example029.dev"
+        }
     }
 }
