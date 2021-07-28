@@ -10,7 +10,7 @@ app "react-example" {
 
     deploy {
         use "pilot-cloudfront" {
-            region = "us-east-1"
+            region = "us-east-2"
             bucket = "pilot-react-example-test" # this should be a unique bucket name
             directory = "./aws/react-example/build/"
         }
