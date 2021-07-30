@@ -1,32 +1,32 @@
-project = "example-nodejs"
+# The name of your project.
+project = "gcpbackend"
 
-app "example-nodejs" {
-  labels = {
-    "service" = "example-nodejs",
-    "env"     = "dev"
-  }
+# See the following for additional information on Waypoint's built-in GCR plugin:
+# https://www.waypointproject.io/plugins/google-cloud-run
+
+app "backend" {
+  # The application entrypoint in relation to the root of your project/repo
+  # example: path = "./sub_dir/my_app"
+  path = "./"
 
   build {
+    # Builds an image based off of your source code using Cloud Native Buildpacks
     use "pack" {}
 
     registry {
+      # Pushes built image to Cloud Container Registry
       use "docker" {
-        image = "gcr.io/gcp-pilot-testing-321318/example-nodejs"
+        image = "gcr.io/pilot-321119/backend"
         tag   = "latest"
       }
     }
   }
 
   deploy {
+    # Deploys application to Google Cloud Run
     use "google-cloud-run" {
-      project  = "gcp-pilot-testing-321318"
+      project  = "pilot-321119"
       location = "us-east1"
-
-      port = 5000
-
-      static_environment = {
-        "NAME" : "World"
-      }
 
       capacity {
         memory                     = 128
@@ -42,6 +42,7 @@ app "example-nodejs" {
   }
 
   release {
+    # Releases application on Google Cloud Run
     use "google-cloud-run" {}
   }
 }
