@@ -20,7 +20,7 @@ app "frontend" {
       # Your chosen AWS region
       region = "us-east-2"
       # This should be a globally unique bucket name
-      bucket = "firstTest-uniquename"
+      bucket = "pilot-react-example-10"
       # Location of build files in relation to root of project/repo
       directory = "./aws/react-example/build/"
     }
