@@ -1,6 +1,10 @@
 project = "react-example"
 
 app "react-example" {
+    url {
+        auto_hostname = false
+    }
+    
     build {
         use "yarn" {
             # need to specify with the way waypoint handles remote repo cloning
