@@ -22,7 +22,7 @@ app "frontend" {
       # This should be a globally unique bucket name
       bucket = "pilot-gcp-react-example"
       # Your chosen GCP region
-      region = "us-east1-b"
+      region = "us-east1"
       # Location of build files in relation to root of project/repo
       directory = "./gcp/react-example/build"
     }
