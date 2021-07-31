@@ -1,5 +1,5 @@
 # The name of your project.
-project = "gcpreact"
+project = "gcp-cdn-test"
 
 # Name of your application
 app "frontend" {
@@ -18,9 +18,9 @@ app "frontend" {
     # to deploy your static assets to a Cloud Storage bucket
     use "pilot-cloud-cdn" {
       # Your GCP Project ID - this will be the default Project ID if used with Pilot
-      project = "pilot-321119"
+      project = "gcp-pilot-testing"
       # This should be a globally unique bucket name
-      bucket = "pilot-gcp-react-example"
+      bucket = "gcp-pilot-cdn-testing"
       # Your chosen GCP region
       region = "us-east1"
       # Location of build files in relation to root of project/repo
