@@ -1,8 +1,8 @@
 # The name of your project.
-project = "gcp-cdn-destroy-test"
+project = "svg-testing"
 
 # Name of your application
-app "destroy-test" {
+app "frontend" {
   build {
     # The template uses a default build plugin provided by Pilot
     # to build your static files for deployment
@@ -20,7 +20,7 @@ app "destroy-test" {
       # Your GCP Project ID - this will be the default Project ID if used with Pilot
       project = "gcp-pilot-testing"
       # This should be a globally unique bucket name
-      bucket = "gcp-cdn-destroy-test"
+      bucket = "pilot-svg-test"
       # Your chosen GCP region
       region = "us-east1"
       # Location of build files in relation to root of project/repo
