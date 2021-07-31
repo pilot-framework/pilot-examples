@@ -1,5 +1,5 @@
 # The name of your project.
-project = "gcp-cdn-test-three"
+project = "gcp-cdn-test"
 
 # Name of your application
 app "frontend" {
@@ -20,7 +20,7 @@ app "frontend" {
       # Your GCP Project ID - this will be the default Project ID if used with Pilot
       project = "gcp-pilot-testing"
       # This should be a globally unique bucket name
-      bucket = "gcp-cdn-test-three"
+      bucket = "gcp-cdn-test-four"
       # Your chosen GCP region
       region = "us-east1"
       # Location of build files in relation to root of project/repo
