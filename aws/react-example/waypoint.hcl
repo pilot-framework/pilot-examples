@@ -1,5 +1,5 @@
 # The name of your project.
-project = "firsttest"
+project = "poll-test"
 
 # Name of your application
 app "frontend" {
@@ -9,7 +9,7 @@ app "frontend" {
     use "yarn" {
       # The application entrypoint in relation to the root of your project/repo
       # example: directory = "./sub_dir/my_app"
-      directory = "./aws/react-example"
+      directory = "./gcp/react-example"
     }
   }
 
@@ -18,11 +18,11 @@ app "frontend" {
     # to deploy your static assets to a S3 bucket with static web hosting enabled
     use "pilot-cloudfront" {
       # Your chosen AWS region
-      region = "us-east-2"
+      region = "us-east-1"
       # This should be a globally unique bucket name
-      bucket = "pilot-react-example-10"
+      bucket = "pilot-poll-testing"
       # Location of build files in relation to root of project/repo
-      directory = "./aws/react-example/build/"
+      directory = "./gcp/react-example/build/"
     }
   }
 
