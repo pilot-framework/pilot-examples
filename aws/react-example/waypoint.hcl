@@ -1,5 +1,5 @@
 # The name of your project.
-project = "poll-test"
+project = "poll-testing-2"
 
 # Name of your application
 app "frontend" {
@@ -20,7 +20,7 @@ app "frontend" {
       # Your chosen AWS region
       region = "us-east-1"
       # This should be a globally unique bucket name
-      bucket = "pilot-poll-testing"
+      bucket = "pilot-poll-testing-2"
       # Location of build files in relation to root of project/repo
       directory = "./aws/react-example/build/"
     }
