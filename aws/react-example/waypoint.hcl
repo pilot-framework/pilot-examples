@@ -20,7 +20,7 @@ app "frontend" {
       # Your chosen AWS region
       region = "us-east-1"
       # This should be a globally unique bucket name
-      bucket = "pilot-destroy-testing-4"
+      bucket = "pilot-destroy-test-5"
       # Location of build files in relation to root of project/repo
       directory = "./aws/react-example/build/"
     }
