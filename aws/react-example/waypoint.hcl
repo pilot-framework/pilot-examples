@@ -9,7 +9,7 @@ app "frontend" {
     use "yarn" {
       # The application entrypoint in relation to the root of your project/repo
       # example: directory = "./sub_dir/my_app"
-      directory = "./gcp/react-example"
+      directory = "./aws/react-example"
     }
   }
 
@@ -22,7 +22,7 @@ app "frontend" {
       # This should be a globally unique bucket name
       bucket = "pilot-poll-testing"
       # Location of build files in relation to root of project/repo
-      directory = "./gcp/react-example/build/"
+      directory = "./aws/react-example/build/"
     }
   }
 
