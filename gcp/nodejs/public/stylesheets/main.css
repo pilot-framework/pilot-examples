@@ -1,8 +1,8 @@
 :root {
-  --text: #E4E5E7;
-  --background: #000;
-  --brand: 4, 198, 194;
-  --headline: #FFF;
+  --text: #282443;
+  --background: #FFF;
+  --brand: 103, 66, 154;
+  --headline: #000;
 }
 
 * {
@@ -70,7 +70,7 @@ section code {
   padding: 4px 6px;
   margin: 0 2px;
   border-radius: 3px;
-  background: rgba(255, 255, 255, .15); 
+  background: rgba(0, 0, 0, 0.15); 
 }
 
 section a {
